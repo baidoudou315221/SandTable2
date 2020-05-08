@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度："
+                style="@style/Login_text_style"/>
+            <EditText
+                android:id="@+id/ed_temp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="250dp"
+                style="@style/Login_text_style"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光强："
+                style="@style/Login_text_style"/>
+            <EditText
+                android:id="@+id/ed_illum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="250dp"
+                style="@style/Login_text_style"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度："
+                style="@style/Login_text_style"/>
+            <EditText
+                android:id="@+id/ed_humi"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="250dp"
+                style="@style/Login_text_style"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CO2："
+                style="@style/Login_text_style"/>
+            <EditText
+                android:id="@+id/ed_chemic"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:minWidth="250dp"
+                style="@style/Login_text_style"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_hand"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="手动调节"
+            style="@style/Login_text_style"
+            android:background="@drawable/sand_button_login"/>
+        <Button
+            android:id="@+id/btn_self"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="一键调节"
+            android:layout_marginTop="30dp"
+            style="@style/Login_text_style"
+            android:background="@drawable/sand_button_login"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/titlebar"/>
+
+    <ImageView
+        android:id="@+id/picLogIn"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/sand_log"/>
+
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="账户名："
+                style="@style/Login_text_style" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="密码："
+                style="@style/Login_text_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/logName"
+                android:layout_width="250dp"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:id="@+id/logPassword"
+                android:layout_width="250dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_marginTop="30dp"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="登陆"
+            style="@style/Login_text_style"
+            android:background="@drawable/sand_button_login0"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginTop="20dp"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="退出"
+            style="@style/Login_text_style"
+            android:background="@drawable/sand_button_login"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

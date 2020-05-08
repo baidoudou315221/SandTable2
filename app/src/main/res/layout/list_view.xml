@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:id="@+id/list_adapter_view"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/list_adapter_image"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/chemic"/>
+        <TextView
+            android:id="@+id/list_adapter_text"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:text="CO2浓度:"
+            android:textColor="@color/sandGreenWord"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/list_adapter_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="35"
+            android:paddingLeft="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/sandGreenWord"/>
+    </LinearLayout>
+
+</LinearLayout>
